@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8937377d-a66e-4ab5-bc87-a7af640474f1" name="Default Changelist" comment="" />
+    <list default="true" id="8937377d-a66e-4ab5-bc87-a7af640474f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rss.php" beforeDir="false" afterPath="$PROJECT_DIR$/rss.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +26,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/cmd/git.exe" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,7 +50,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580004526754</updated>
-      <workItem from="1580004527918" duration="9234000" />
+      <workItem from="1580004527918" duration="10027000" />
+      <workItem from="1580066709964" duration="369000" />
+      <workItem from="1580067127139" duration="300000" />
+      <workItem from="1580067447583" duration="39000" />
+      <workItem from="1581389990209" duration="723000" />
+      <workItem from="1581900965206" duration="773000" />
     </task>
     <servers />
   </component>
@@ -59,7 +67,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

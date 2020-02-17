@@ -3,7 +3,7 @@
     //Thanks to https://davidwalsh.name/php-cache-function for cache idea
     $file = "./feed-cache.txt";
     $current_time = time();
-    $expire_time = 0.1 * 60;
+    $expire_time = 5 * 60;
     $file_time = filemtime($file);
 
     if(file_exists($file) && ($current_time - $expire_time < $file_time)) {
@@ -29,14 +29,14 @@
        ]
    );
     foreach($newsSource as $source){
-        $html .= '<h2>'.$source["title"].'</h2>';
-        $html .= getFeed($source["url"]);
+        $html .= '<h2>'.$source['title'].'</h2>';
+        $html .= getFeed($source['url']);
     }
     return $html;
 }
 
  function getFeed($url){
-    $html = "";
+    $html = '';
     $rss =  new SimpleXMLElement($url,0,true);
 
     $count = 0;
@@ -45,12 +45,14 @@
     if($rss->entry){
         foreach($rss->entry as $item) {
             $count++;
-            if($count > 7){
+            if($count > 15){
                 break;
             }
             $html .= '<li><a href="'.htmlspecialchars($item->link->attributes()).'">'.htmlspecialchars($item->title).'</a></li>';
         }
-    }else{
+    }
+    //reddit problem
+    if($rss->channel->item){
         foreach($rss->channel->item as $item) {
             $count++;
             if($count > 7){
